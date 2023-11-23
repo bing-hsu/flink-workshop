@@ -1,0 +1,20 @@
+1. Cut the Hassle and Make it Run
+
+1.1 use `main()`
+
+    ./gradlew run -Pmain=MinimumApp -Plocal=1
+
+
+
+1.2 use single node cluster
+
+    # start cluster
+    <flink-dir>/bin/start-cluster.sh
+
+    # end cluster
+    <flink-dir>/bin/stop-cluster.sh
+
+
+2. Checkpoint, Savepoint, Pause & Resume and Stateful Update
+
+3. E2E Consistency

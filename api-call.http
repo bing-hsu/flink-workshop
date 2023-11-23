@@ -1,0 +1,14 @@
+### list all jobs
+GET {{endpoint}}/jobs
+
+### cancel a job
+PATCH {{endpoint}}/jobs/471d8ed0870416e6fd85d164991463a8?mode=cancel
+
+### trigger savepoint
+POST {{endpoint}}/jobs/844075fdbb1d315cad44844e898e4316/savepoints
+Content-Type: application/json
+
+{
+  "target-directory": "file:///tmp/flink-tmp/flink-savepoints",
+  "cancel-job": true
+}
